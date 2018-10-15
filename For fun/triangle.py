@@ -1,0 +1,1 @@
+_ = [print(*j*3, sep="") for j in ([list(map(lambda x: "*" + " "*(2*i-1)*(x!=1) + "*"*(i!=0) + " "*(5-i)*(i!=5) if x == 6-i else "*" if (i == 5 and x == 6) else ("*"*2) if i == 5 else "" if x > 6-i else " ", list(range(1, 7)))) for i in range(6)])]
